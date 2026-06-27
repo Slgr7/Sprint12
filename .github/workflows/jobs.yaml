@@ -25,7 +25,7 @@ jobs:
         run: go vet ./...
 
       - name: Run tests
-        run: |
+        run: go test ./...
 
   deploy:
     name: Build & Push Docker Image
